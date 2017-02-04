@@ -61,7 +61,7 @@ if __name__ == "__main__":
             discipline_repository = DisciplinePickleRepository(DisciplineValidator, properties["disciplines"])
 
         """
-        Initialize controllers and read data (if all the repositories are initialized correctly
+        Initialize controllers and read data (if all the repositories are initialized correctly)
         """
         if RepositoriesChecker.check_all(student_repository, discipline_repository, grade_repository,
                                          link_repository):
