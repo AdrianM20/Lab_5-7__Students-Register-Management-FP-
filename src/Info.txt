@@ -1,0 +1,16 @@
+Repos locations: in memory
+
+Text files: text file
+Students: "../../data/students"
+Disciplines: "../../data/disciplines"
+Grades: "../../data/grades"
+Enrollment: "../../data/enrollment"
+
+Binary Files: binary file
+Students: "../../pickles/students.pickle"
+Disciplines: "../../pickles/disciplines.pickle"
+Grades: "../../pickles/grades.pickle"
+Enrollment: "../../pickles/enrollment.pickle"
+
+Settings location:
+"../../src/settings.properties"
