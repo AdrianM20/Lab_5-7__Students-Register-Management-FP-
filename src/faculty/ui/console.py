@@ -5,7 +5,6 @@ Created on 06.11.2016
 @author adiM
 """
 
-
 from faculty.domain.validators import FacultyException
 from util.common import MyUtil
 

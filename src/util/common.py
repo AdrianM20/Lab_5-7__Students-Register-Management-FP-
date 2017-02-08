@@ -31,6 +31,7 @@ class PropertiesLoader(object):
                     properties[key] = value
         return properties
 
+
 class RepositoriesChecker(object):
     @staticmethod
     def check_all(student_repo, discipline_repo, grade_repo, link_repo):

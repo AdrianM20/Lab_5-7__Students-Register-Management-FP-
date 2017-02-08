@@ -17,6 +17,7 @@ class Student(object):
     setters:
         name
     """
+
     def __init__(self, student_id, name):
         self.__student_id = student_id
         self.__name = name
@@ -60,6 +61,7 @@ class Discipline(object):
         setters:
             name
         """
+
     def __init__(self, discipline_id, name):
         self.__discipline_id = discipline_id
         self.__name = name
@@ -106,6 +108,7 @@ class Grade(object):
             student_id
             grade_value
         """
+
     def __init__(self, discipline_id, student_id, grade_value):
         self.__discipline_id = discipline_id
         self.__student_id = student_id
@@ -152,6 +155,7 @@ class Link(object):
             link_id
         setters: -
         """
+
     def __init__(self, discipline_id, student_id):
         self.__discipline_id = discipline_id
         self.__student_id = student_id

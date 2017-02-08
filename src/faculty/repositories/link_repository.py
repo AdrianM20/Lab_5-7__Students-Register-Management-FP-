@@ -33,7 +33,7 @@ class LinkRepository(object):
             return stud_links
         return None
 
-    def find_by_discipline(self,discipline_id):
+    def find_by_discipline(self, discipline_id):
         dis_links = []
         for link in self._links.values():
             if link.discipline_id == discipline_id:
@@ -42,7 +42,7 @@ class LinkRepository(object):
             return dis_links
         return None
 
-    def init_save(self,link):
+    def init_save(self, link):
         if self.find_link(link.link_id) is not None:
             raise LinkRepositoryException("Student is already enrolled at this discipline")
         self.__validator_class.validate(link)
@@ -60,14 +60,14 @@ class LinkRepository(object):
         for link in links.values():
             if link.student_id == student_id:
                 del self._links[link.link_id]
-        # self.__save_to_file()
+                # self.__save_to_file()
 
     def delete_by_discipline(self, discipline_id):
         links = deepcopy(self._links)
         for link in links.values():
             if link.discipline_id == discipline_id:
                 del self._links[link.link_id]
-        # self.__save_to_file()
+                # self.__save_to_file()
 
     def delete_specific_link(self, link_id):
         del self._links[link_id]
@@ -81,6 +81,8 @@ class LinkRepository(object):
 
     def save_enrollment(self):
         pass
+
+
 '''
     def __save_to_file(self):
         f = open(self.__filename, "w")

@@ -18,6 +18,7 @@ class StudentGradeDTO(object):
             student_name
             avg_grade
         """
+
     def __init__(self, student_name, avg_grade):
         self.__student_name = student_name
         self.__avg_grade = avg_grade
@@ -51,6 +52,7 @@ class StudentFailDTO(object):
             student_name
             discipline_name
         """
+
     def __init__(self, student_name, discipline_name):
         self.__student_name = student_name
         self.__discipline_name = discipline_name
@@ -84,6 +86,7 @@ class StudentAggregatedDTO(object):
             student_name
             aggregated_average
         """
+
     def __init__(self, student_name, aggregated_average):
         self.__student_name = student_name
         self.__aggregated_average = aggregated_average
@@ -117,6 +120,7 @@ class DisciplineAverageDTO(object):
             discipline_name
             average_grade
         """
+
     def __init__(self, discipline_name, average_grade):
         self.__discipline_name = discipline_name
         self.__average_grade = average_grade

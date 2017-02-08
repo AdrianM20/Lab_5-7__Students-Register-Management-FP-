@@ -38,7 +38,7 @@ class StudentUndoController(StudentController):
         self.__undo_controller.record_operation(operation)
 
     def __restore_student_data(self, student_id, name, links, grades):
-        StudentController.add_student(self,student_id,name)
+        StudentController.add_student(self, student_id, name)
         if links is not None:
             for link in links:
                 self.__link_repository.save(link)

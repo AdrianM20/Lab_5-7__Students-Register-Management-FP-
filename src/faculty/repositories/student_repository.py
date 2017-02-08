@@ -16,6 +16,7 @@ class StudentRepository(object):
     """
     Class that stores and performs operations on student objects
     """
+
     def __init__(self, validator_class):
         self.__validator_class = validator_class
         self._students = {}
@@ -36,7 +37,8 @@ class StudentRepository(object):
 
     def init_save(self, student):
         if self.find_by_id(student.student_id) is not None:
-            raise StudentRepositoryException("Duplicate error. Student ID {0} already registered.".format(student.student_id))
+            raise StudentRepositoryException(
+                "Duplicate error. Student ID {0} already registered.".format(student.student_id))
         self.__validator_class.validate(student)
         self._students[student.student_id] = student
 
@@ -49,7 +51,8 @@ class StudentRepository(object):
                 StudentRepositoryException if student.student.student_id is already taken
         """
         if self.find_by_id(student.student_id) is not None:
-            raise StudentRepositoryException("Duplicate error. Student ID {0} already registered.".format(student.student_id))
+            raise StudentRepositoryException(
+                "Duplicate error. Student ID {0} already registered.".format(student.student_id))
         self.__validator_class.validate(student)
         self._students[student.student_id] = student
         # self.__save_to_file()
@@ -76,6 +79,8 @@ class StudentRepository(object):
 
     def save_students(self):
         pass
+
+
 '''
     def __save_to_file(self):
         f = open(self.__filename, "w")

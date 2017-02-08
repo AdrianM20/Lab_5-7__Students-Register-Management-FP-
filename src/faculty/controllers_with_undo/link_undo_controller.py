@@ -33,4 +33,3 @@ class LinkUndoController(LinkController):
         undo = FunctionCall(self.add_link, link.discipline_id, link.student_id)
         operation = Operation(redo, undo)
         self.__undo_controller.record_operation(operation)
-

@@ -55,7 +55,7 @@ class GradeRepository(object):
                 if grd.student_id != student_id:
                     new_grades.append(grd)
             self._grades = new_grades
-        # self.__save_to_file()
+            # self.__save_to_file()
 
     def delete_by_discipline(self, discipline_id):
         if self.find_by_discipline(discipline_id) is not None:
@@ -66,7 +66,7 @@ class GradeRepository(object):
                 if grd.discipline_id != discipline_id:
                     new_grades.append(grd)
             self._grades = new_grades
-        # self.__save_to_file()
+            # self.__save_to_file()
 
     def delete_specific_grade(self, grade):
         new_grades = []
@@ -84,6 +84,8 @@ class GradeRepository(object):
 
     def save_grades(self):
         pass
+
+
 '''
     def __save_to_file(self):
         f = open(self.__filename, "w")

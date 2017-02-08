@@ -5,7 +5,6 @@ Created on 07.11.2016
 @author adiM
 """
 
-
 from faculty.domain.entities import Discipline
 
 
@@ -35,4 +34,3 @@ class DisciplineController(object):
 
     def get_all(self):
         return self.__discipline_repository.get_all()
-

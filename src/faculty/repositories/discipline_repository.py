@@ -5,7 +5,6 @@ Created on 08.11.2016
 @author adiM
 """
 
-
 from faculty.domain.validators import FacultyException
 
 
@@ -63,6 +62,8 @@ class DisciplineRepository(object):
 
     def save_disciplines(self):
         pass
+
+
 '''
     def __save_to_file(self):
         f = open(self.__filename, "w")

@@ -5,13 +5,16 @@ Created on 09.01.2017
 @author adiM
 """
 
-from src.faculty.repositories.file_repository import StudentFileRepository, DisciplineFileRepository, LinkFileRepository, GradeFileRepository
-from src.faculty.repositories.pickle_repository import StudentPickleRepository, DisciplinePickleRepository, LinkPickleRepository, GradePickleRepository
+from src.faculty.repositories.file_repository import StudentFileRepository, DisciplineFileRepository, \
+    LinkFileRepository, GradeFileRepository
+from src.faculty.repositories.pickle_repository import StudentPickleRepository, DisciplinePickleRepository, \
+    LinkPickleRepository, GradePickleRepository
 from src.faculty.domain.validators import StudentValidator, DisciplineValidator, LinkValidator, GradeValidator
+
 if __name__ == "__main__":
     print()
     """"""
-    s1 = StudentFileRepository(StudentValidator,"../data/students")
+    s1 = StudentFileRepository(StudentValidator, "../data/students")
     s1.load_students()
 
     s2 = StudentPickleRepository(StudentValidator, "../pickles/students.pickle")
