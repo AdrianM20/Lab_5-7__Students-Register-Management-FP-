@@ -1,5 +1,5 @@
 # Lab 5-7 - Students Register Management [FP]
-#### Assignment for FP laboratory 5-8
+#### Assignment for FP laboratory 5-7 (extended with lab 8 and lab 9)
 
 
 For this lab assignment I had problem 1 - Students Register Management
