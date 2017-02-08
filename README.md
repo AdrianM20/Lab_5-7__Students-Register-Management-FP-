@@ -1,4 +1,4 @@
-# Lab_5-7__Students-Register-Management-FP-
+# Lab 5-7 - Students Register Management [FP]
 #### Assignment for FP laboratory 5-8
 
 
