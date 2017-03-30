@@ -18,6 +18,11 @@ class StudentRepository(object):
     """
 
     def __init__(self, validator_class):
+        """
+        Class constructor 
+        
+        Parameter: validator_class - specific class that the repository uses for data validation
+        """
         self.__validator_class = validator_class
         self._students = {}
         # self.__filename = filename
